@@ -1,0 +1,15 @@
+      ​
+      ​
+      ​        ${c1}dd${c1}dd  
+      ​  ${c1}KK${c1}Kd  ${c2}KK${c2}KK${c1}KK  
+      ​${c2}dd  ${c3}dd${c1}KK${c1}KK${c3}dx  ${c2}dd  
+      ​  ${c3}xx${c6}xx${c3}dd${c3}dd${c6}xx${c3}xx  
+      ​${c6}xd${c5}KK${c5}KK${c4}dd${c4}dd${c4}dd${c4}dd${c6}xx  
+      ​${c5}KK${c4}dd${c4}dd${c4}dd${c5}KK${c4}dd${c4}dd${c5}KK  
+      ​${c6}xd${c4}dd${c5}KK${c4}dd${c6}xx${c4}dd${c4}dd${c6}dx  
+      ​${c4}dd${c6}xx${c6}xx${c4}dd${c4}dd${c6}xx${c6}xx${c4}dd  
+      ​  ${c4}dd${c6}dd${c6}xx${c6}xx${c6}dd${c4}dd  
+      ​    ${c4}dd${c6}dd${c6}dd${c4}dd  
+      ​      ${c4}dd${c4}dd  
+      ​
+      ​
