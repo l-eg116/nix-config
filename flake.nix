@@ -10,9 +10,12 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    # Catppuccin
+    catppuccin.url = "github:catppuccin/nix";
   };
 
-  outputs = { self, nixpkgs, home-manager, ... } @ inputs: let
+  outputs = { self, nixpkgs, home-manager, catppuccin, ... } @ inputs: let
     inherit (self) outputs;
   in {
     nixosConfigurations = {
@@ -21,6 +24,7 @@
         # > Our main nixos configuration file <
         modules = [
           inputs.home-manager.nixosModules.default
+          catppuccin.nixosModules.catppuccin
           ./hosts/default/configuration.nix
           ./modules/nixos
           ./modules/home-manager

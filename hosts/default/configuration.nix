@@ -17,5 +17,7 @@
 
   networking.hostName = "Camille";
 
+  catppuccin.flavour = "mocha";
+
   system.stateVersion = "23.11";
 }
