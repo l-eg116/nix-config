@@ -6,7 +6,7 @@
   ];
 
   xdg.mimeApps = {
-    enable = true;
+    enable = false;
     defaultApplications = {
       "text/html" = "google-chrome.desktop";
       "x-scheme-handler/http" = "google-chrome.desktop";

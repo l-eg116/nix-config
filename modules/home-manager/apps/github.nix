@@ -15,7 +15,7 @@
   };
 
   xdg.mimeApps = {
-    enable = true;
+    enable = false;
     defaultApplications = {
       "x-scheme-handler/x-github-client" = "github-desktop.desktop";
       "x-scheme-handler/x-github-desktop-auth" = "github-desktop.desktop";
