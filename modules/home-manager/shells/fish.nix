@@ -54,7 +54,6 @@ in
     shellInit = ''
       source $HOME/.config/fish/aliases.fish
     '';
-    catppuccin.enable = true;
   };
   xdg.configFile."fish" = {
     source = ./fish;
