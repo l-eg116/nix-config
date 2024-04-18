@@ -16,12 +16,16 @@
     variant = "";
   };
 
+  # Not utils
   environment.plasma5.excludePackages = [
     pkgs.libsForQt5.konsole
     pkgs.libsForQt5.elisa
   ];
 
+  # Utils
   environment.systemPackages = with pkgs; [
     papirus-icon-theme
+    partition-manager
+    pika-backup
   ];
 }
