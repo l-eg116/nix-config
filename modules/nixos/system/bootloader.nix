@@ -12,5 +12,6 @@
 
       catppuccin.enable = true;
     };
+    timeout = 10;
   };
 }
