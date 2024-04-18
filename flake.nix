@@ -19,13 +19,13 @@
     inherit (self) outputs;
   in {
     nixosConfigurations = {
-      default = nixpkgs.lib.nixosSystem {
+      camille = nixpkgs.lib.nixosSystem {
         specialArgs = {inherit inputs outputs;};
         # > Our main nixos configuration file <
         modules = [
           inputs.home-manager.nixosModules.default
           inputs.catppuccin.nixosModules.catppuccin
-          ./hosts/default/configuration.nix
+          ./hosts/camille/configuration.nix
           ./modules/nixos
           ./modules/home-manager
         ];

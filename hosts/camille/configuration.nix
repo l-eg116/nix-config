@@ -20,7 +20,7 @@
     dates = "weekly";
   };
 
-  networking.hostName = "Camille";
+  networking.hostName = "camille";
 
   catppuccin.flavour = "mocha";
 
