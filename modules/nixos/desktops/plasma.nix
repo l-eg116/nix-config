@@ -20,4 +20,8 @@
     pkgs.libsForQt5.konsole
     pkgs.libsForQt5.elisa
   ];
+
+  environment.systemPackages = with pkgs; [
+    papirus-icon-theme
+  ];
 }
