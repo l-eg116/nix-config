@@ -6,6 +6,7 @@
     ./apps/discord.nix
     ./apps/github.nix
     ./apps/signal.nix
+    ./apps/steam.nix
     ./apps/vscode.nix
     ./shells/fish.nix
     ./terminal/kitty.nix
