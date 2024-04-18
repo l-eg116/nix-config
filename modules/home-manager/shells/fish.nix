@@ -18,7 +18,10 @@ in
     zoxide
   ];
 
-  programs.bat.enable = true;
+  programs.bat = {
+    enable = true;
+    catppuccin.enable = true;
+  };
 
   programs.eza = {
     enable = true;
@@ -51,6 +54,7 @@ in
     shellInit = ''
       source $HOME/.config/fish/aliases.fish
     '';
+    catppuccin.enable = true;
   };
   xdg.configFile."fish" = {
     source = ./fish;

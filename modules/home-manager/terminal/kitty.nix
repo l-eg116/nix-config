@@ -13,7 +13,7 @@
     enable = true;
     shellIntegration.enableFishIntegration = true;
 
-    theme = "Catppuccin-Mocha";
+    catppuccin.enable = true;
     settings = {
       font_size = 14;
       disable_ligatures = "never";

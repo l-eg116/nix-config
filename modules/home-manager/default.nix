@@ -7,9 +7,9 @@
 
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
-    users = {
-      "l_eg" = import ./home.nix;
-      # "root" = import ./root_home.nix;
-    };
+    users."l_eg".imports = [
+      inputs.catppuccin.homeManagerModules.catppuccin
+      ./home.nix
+    ];
   };
 }
