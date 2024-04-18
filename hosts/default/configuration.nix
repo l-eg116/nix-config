@@ -15,6 +15,11 @@
     };
   };
 
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+  };
+
   networking.hostName = "Camille";
 
   catppuccin.flavour = "mocha";
