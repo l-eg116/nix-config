@@ -5,6 +5,7 @@
     ./apps/chrome.nix
     ./apps/discord.nix
     ./apps/github.nix
+    ./apps/signal.nix
     ./apps/vscode.nix
     ./shells/fish.nix
     ./terminal/kitty.nix
