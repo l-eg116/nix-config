@@ -3,6 +3,9 @@ abbr c code
 
 abbr ll "ls -l"
 abbr lla "ls -la"
+abbr lta "lt -a"
+abbr llt "lt -l"
+abbr llta "lt -la"
 
 # Kitty
 alias clipboard "kitten clipboard"
