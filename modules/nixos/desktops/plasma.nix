@@ -17,14 +17,16 @@
   };
 
   # Not utils
-  environment.plasma5.excludePackages = [
-    pkgs.libsForQt5.konsole
-    pkgs.libsForQt5.elisa
+  environment.plasma5.excludePackages = with pkgs.libsForQt5; [
+    konsole
+    elisa
+    plasma-systemmonitor
   ];
 
   # Utils
   environment.systemPackages = with pkgs; [
     libsForQt5.filelight
+    mission-center
     papirus-icon-theme
     partition-manager
     pika-backup
