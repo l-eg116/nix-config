@@ -24,6 +24,7 @@
 
   # Utils
   environment.systemPackages = with pkgs; [
+    libsForQt5.filelight
     papirus-icon-theme
     partition-manager
     pika-backup
