@@ -82,6 +82,7 @@ in {
         "uc.tweak.popup-search" = true;
         "uc.tweak.longer-sidebar" = true;
         "browser.startup.page" = 3;
+        "browser.ctrlTab.sortByRecentlyUsed" = true;
 
         "widget.use-xdg-desktop-portal.file-picker" = true;
       };
