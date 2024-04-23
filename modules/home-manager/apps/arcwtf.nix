@@ -85,6 +85,7 @@ in {
         "browser.ctrlTab.sortByRecentlyUsed" = true;
 
         "widget.use-xdg-desktop-portal.file-picker" = true;
+        "browser.download.useDownloadDir" = false;
       };
     };
   };
