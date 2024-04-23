@@ -8,6 +8,9 @@
   services.displayManager.sddm.enable = true;
   services.xserver.desktopManager.plasma5.enable = true;
 
+  # Enable touchpad support (enabled default in most desktopManager).
+  services.xserver.libinput.enable = true;
+
   services.xserver.dpi = 124;
 
   # Keymap in X11
@@ -17,10 +20,10 @@
   };
 
   # Not utils
-  environment.plasma5.excludePackages = with pkgs.libsForQt5; [
-    konsole
-    elisa
-    plasma-systemmonitor
+  environment.plasma5.excludePackages = with pkgs; [
+    libsForQt5.konsole
+    libsForQt5.elisa
+    libsForQt5.okular
   ];
 
   # Utils
