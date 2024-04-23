@@ -12,12 +12,14 @@
   fonts.packages = with pkgs; [
     inter
     (nerdfonts.override {fonts = ["FiraCode" "JetBrainsMono"];})
+    noto-fonts-color-emoji
   ];
 
   fonts.fontconfig = {
     defaultFonts = {
       serif = [ "Inter" ];
       monospace = [ "FiraCode" ];
+      emoji = [ "Noto Color Emoji" ];
     };
   };
 }
