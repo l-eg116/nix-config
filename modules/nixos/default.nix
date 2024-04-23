@@ -14,6 +14,7 @@
     ./system/bootloader.nix
     ./tools/git.nix
     ./tools/nh.nix
+    ./tools/qflipper.nix
   ];
 
   # Allow unfree packages

@@ -10,10 +10,6 @@ let
     Status = "locked";
   };
 in {
-  # environment.systemPackages = with pkgs; [
-  #   firefox
-  # ];
-
   programs.firefox = {
     enable = true;
     package = pkgs.wrapFirefox pkgs.firefox-unwrapped {
