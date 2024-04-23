@@ -91,4 +91,13 @@ in {
     target = ".mozilla/firefox/default/chrome";
     recursive = true;
   };
+
+  xdg.desktopEntries."firefox" = {
+    name = "Arc WTF";
+    genericName = "Web Browser";
+    exec = "firefox";
+    terminal = false;
+    icon = ./arcwtf/Arc.ico;
+    categories = [ "Application" "Network" "WebBrowser" ];
+  };
 }
