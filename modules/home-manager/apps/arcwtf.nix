@@ -1,15 +1,6 @@
 { pkgs, ... }:
 
-let
-  lock-false = {
-    Value = false;
-    Status = "locked";
-  };
-  lock-true = {
-    Value = true;
-    Status = "locked";
-  };
-in {
+{
   programs.firefox = {
     enable = true;
     package = pkgs.wrapFirefox pkgs.firefox-unwrapped {
@@ -80,7 +71,8 @@ in {
         "browser.startup.page" = 3;
         "browser.ctrlTab.sortByRecentlyUsed" = true;
 
-        "widget.use-xdg-desktop-portal.file-picker" = true;
+        "widget.use-xdg-desktop-portal.file-picker" = 1;
+        "widget.use-xdg-desktop-portal.mime-handler" = 1;
         "browser.download.useDownloadDir" = false;
       };
     };
