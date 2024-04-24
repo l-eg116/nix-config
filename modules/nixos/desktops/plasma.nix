@@ -28,6 +28,7 @@
 
   # Utils
   environment.systemPackages = with pkgs; [
+    kolourpaint
     libsForQt5.filelight
     mission-center
     papirus-icon-theme
