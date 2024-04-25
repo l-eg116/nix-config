@@ -28,6 +28,7 @@
 
   # Utils
   environment.systemPackages = with pkgs; [
+    kdeconnect
     kolourpaint
     libsForQt5.filelight
     mission-center
