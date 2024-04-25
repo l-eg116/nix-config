@@ -88,11 +88,11 @@ style = "bg:sapphire"
 format = '[ $symbol $context ]($style) $path'
 
 [nix_shell]
-format = "[ $symbol$state $name ]($style)"
+format = "[ $symbol$state$name ]($style)"
 symbol = " "
 style = "bg:sapphire"
 pure_msg = " "
-impure_msg = "󰃢 "
+impure_msg = ""
 
 [os]
 disabled = true # Disabled by default
