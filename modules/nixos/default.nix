@@ -13,7 +13,6 @@
     ./hardware/nvidia.nix
     ./shells/sh.nix
     ./system/bootloader.nix
-    ./tools/can-utils.nix
     ./tools/git.nix
     ./tools/nh.nix
     ./tools/qflipper.nix
