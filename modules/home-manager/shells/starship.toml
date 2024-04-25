@@ -20,6 +20,7 @@ $rust\
 $scala\
 [](fg:teal bg:sapphire)\
 $docker_context\
+$nix_shell\
 $os\
 [](fg:sapphire bg:lavender)\
 $time\
@@ -85,6 +86,13 @@ symbol = " "
 only_with_files = false
 style = "bg:sapphire"
 format = '[ $symbol $context ]($style) $path'
+
+[nix_shell]
+format = "[ $symbol$state $name ]($style)"
+symbol = " "
+style = "bg:sapphire"
+pure_msg = " "
+impure_msg = "󰃢 "
 
 [os]
 disabled = true # Disabled by default

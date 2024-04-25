@@ -13,4 +13,4 @@ alias icat "kitten icat --align=left"
 alias ssh "kitten ssh"
 
 # Programming
-# abbr py python3
+abbr nix-shell "nix-shell --command fish"
