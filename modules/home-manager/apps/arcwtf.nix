@@ -87,7 +87,7 @@
   xdg.desktopEntries."firefox" = {
     name = "Arc WTF";
     genericName = "Web Browser";
-    exec = "firefox";
+    exec = "firefox %u";
     terminal = false;
     icon = ./arcwtf/Arc.ico;
     categories = [ "Application" "Network" "WebBrowser" ];
