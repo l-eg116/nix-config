@@ -6,6 +6,7 @@
     ./apps/chrome.nix
     ./apps/discord.nix
     ./apps/github.nix
+    ./apps/minecraft.nix
     ./apps/signal.nix
     ./apps/steam.nix
     ./apps/vscode.nix
