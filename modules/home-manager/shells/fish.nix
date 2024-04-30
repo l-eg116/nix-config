@@ -37,7 +37,7 @@ in
     commands = {
       on-select = ''
       &{{
-        lf -remote "send $id set statfmt \"$(${pkgs.eza}/bin/exa -ld --color=always "$f")\""
+        lf -remote "send $id set statfmt \"$(${pkgs.eza}/bin/eza -ld --icons --git -@ --color=always "$f")\""
       }}
       '';
       z = ''
@@ -64,11 +64,19 @@ in
         mkdir $DIR
       }}
       '';
+      back-to-oldpwd = ''
+      %{{
+        lf -remote "send $id :cd $OLDPWD; quit"
+      }}
+      '';
     };
 
     keybindings = {
       o = "&$OPENER \"$f\"";
       i = "$bat --paging=always $f";
+
+      q = "back-to-oldpwd";
+      w = "quit";
 
       "<space>" = ":toggle";
 

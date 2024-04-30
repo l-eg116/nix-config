@@ -12,5 +12,8 @@ alias clipboard "kitten clipboard"
 alias icat "kitten icat --align=left"
 alias ssh "kitten ssh"
 
+# lf
+alias lf "lfcd"
+
 # Programming
 abbr nix-shell "nix-shell --command fish"
