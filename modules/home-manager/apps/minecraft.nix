@@ -2,7 +2,7 @@
 
 {
   home.packages = with pkgs; [
-    prismlauncher-qt5
+    prismlauncher
   ];
 
   xdg.desktopEntries."org.prismlauncher.PrismLauncher" = {
