@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     prismlauncher
+    mcaselector
   ];
 
   xdg.desktopEntries."org.prismlauncher.PrismLauncher" = {
