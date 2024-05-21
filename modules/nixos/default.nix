@@ -13,6 +13,7 @@
     ./hardware/nvidia.nix
     ./shells/sh.nix
     ./system/bootloader.nix
+    ./system/udev.nix
     ./tools/git.nix
     ./tools/nh.nix
     ./tools/qflipper.nix
