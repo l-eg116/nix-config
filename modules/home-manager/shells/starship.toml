@@ -1,6 +1,5 @@
 format = """
 $hostname\
-[](fg:maroon)\
 $directory\
 [](fg:maroon bg:yellow)\
 $git_branch\
@@ -23,16 +22,18 @@ $docker_context\
 $nix_shell\
 $os\
 [](fg:sapphire bg:lavender)\
-$time\
+[ 󰩗 ](bg:lavender)\
 [](fg:lavender)\
-\n\
+$line_break\
 $username\
+$character\
 """
+
+right_format = "$cmd_duration"
 
 palette = 'catppuccin_latte'
 # Disable the blank line at the start of the prompt
 # add_newline = false
-continuation_prompt = '[$user ](hidden)[](fg:#1e1e2e bg:$style)[](fg:$style) '
 
 # You can also replace your username with a neat symbol like   or disable this
 # and use the os module below
@@ -40,8 +41,11 @@ continuation_prompt = '[$user ](hidden)[](fg:#1e1e2e bg:$style)[](fg
 show_always = true
 style_user = "bg:mauve fg:#1e1e2e"
 style_root = "bold bg:red fg:#1e1e2e"
-format = '[](inverted $style)[$user ]($style fg:base)[](inverted $style)[]($style)[](inverted $style) '
+format = '[](inverted $style)[$user ]($style fg:base)[](inverted $style)'
 disabled = false
+
+[character]
+format = "[](bg:mauve fg:#1e1e2e)[](fg:mauve bg:#1e1e2e) "
 
 [hostname]
 ssh_only = true
@@ -51,7 +55,7 @@ format = "[](fg:$style)[$ssh_symbol$hostname ](fg:base bg:$style)[](invert
 
 [directory]
 style = "maroon"
-format = "[$path ](bg:$style)"
+format = "[](fg:$style)[$path ](bg:$style)"
 truncation_length = 4
 truncation_symbol = "…/"
 truncate_to_repo = false
@@ -81,12 +85,6 @@ truncate_to_repo = false
 # "Important 󰈙 " = " 󰈙 "
 
 
-[docker_context]
-symbol = " "
-only_with_files = false
-style = "bg:sapphire"
-format = '[ $symbol $context ]($style) $path'
-
 [nix_shell]
 format = "[ $symbol$state$name ]($style)"
 symbol = " "
@@ -101,13 +99,31 @@ format = "[ $symbol$name ]($style)"
 
 [os.symbols]
 Mint = "󰣭 "
-# Kali = "  "
+
+[cmd_duration]
+format = "[]($style)[ 󱎫 $duration ](fg:base bg:$style)[](inverted $style)"
+style = "peach bold"
+min_time = 1_000
+show_notifications = true
+min_time_to_notify = 30_000
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+style = "bg:lavender"
+format = '[$time ]($style)'
 
 
 [c]
 symbol = " "
 style = "bg:teal"
 format = '[ $symbol ($version) ]($style)'
+
+[docker_context]
+symbol = " "
+only_with_files = false
+style = "bg:sapphire"
+format = '[ $symbol $context ]($style) $path'
 
 [elixir]
 symbol = " "
@@ -172,11 +188,6 @@ symbol = " "
 style = "bg:teal"
 format = '[ $symbol ($version) ]($style)'
 
-[time]
-disabled = false
-time_format = "%R" # Hour:Minute Format
-style = "bg:lavender"
-format = '[ 󰩗 $time ]($style)'
 
 [palettes.catppuccin_latte]
 rosewater = "#dc8a78"
