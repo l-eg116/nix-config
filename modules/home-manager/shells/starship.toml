@@ -104,14 +104,14 @@ Mint = "󰣭 "
 format = "[]($style)[ 󱎫 $duration ](fg:base bg:$style)[](inverted $style)"
 style = "peach bold"
 min_time = 1_000
-show_notifications = true
+show_notifications = false
 min_time_to_notify = 30_000
 
 [time]
 disabled = false
 time_format = "%R" # Hour:Minute Format
-style = "bg:lavender"
-format = '[$time ]($style)'
+style = "lavender"
+format = '[](bg:maroon fg:$style)[ $time ](bg:$style)[](inverted $style)'
 
 
 [c]
@@ -179,7 +179,7 @@ style = "bg:teal"
 format = '[ $symbol ($version) ]($style)'
 
 [rust]
-symbol = ""
+symbol = "󱘗"
 style = "bg:teal"
 format = '[ $symbol ($version) ]($style)'
 
