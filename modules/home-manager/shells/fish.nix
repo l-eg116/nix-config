@@ -18,6 +18,11 @@ in
     catppuccin.enable = true;
   };
 
+  programs.direnv = {
+    enable = true;
+    silent = true;
+  };
+
   programs.eza = {
     enable = true;
     enableFishIntegration = true;

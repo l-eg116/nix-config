@@ -19,6 +19,7 @@ $rust\
 $scala\
 [](fg:teal bg:sapphire)\
 $docker_context\
+$direnv\
 $nix_shell\
 $os\
 [](fg:sapphire bg:lavender)\
@@ -84,9 +85,18 @@ truncate_to_repo = false
 # So either put "Important Documents" before "Documents" or use the substituted version:
 # "Important 󰈙 " = " 󰈙 "
 
+[direnv]
+disabled = false
+format = "[ $loaded$allowed]($style)"
+style = "bg:sapphire"
+unloaded_msg = "󱧊 "
+loaded_msg = "󱥾 "
+allowed_msg = ""
+not_allowed_msg = "󰀦 "
+denied_msg = "󰅖 "
 
 [nix_shell]
-format = "[ $symbol$state$name ]($style)"
+format = "[$symbol$state$name ]($style)"
 symbol = " "
 style = "bg:sapphire"
 pure_msg = " "
