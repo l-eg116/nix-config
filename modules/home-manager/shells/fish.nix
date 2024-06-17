@@ -20,8 +20,15 @@ in
 
   programs.direnv = {
     enable = true;
-    silent = true;
   };
+  xdg.configFile."direnv" = {
+    target = "direnv/direnv.toml";
+    text = ''
+      [global]
+      hide_env_diff = true
+    '';
+  };
+
 
   programs.eza = {
     enable = true;
