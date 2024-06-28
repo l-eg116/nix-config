@@ -6,7 +6,7 @@
 
   # Enable the KDE Plasma Desktop Environment.
   services.displayManager.sddm.enable = true;
-  services.xserver.desktopManager.plasma5.enable = true;
+  services.xserver.desktopManager.plasma6.enable = true;
 
   # Enable touchpad support (enabled default in most desktopManager).
   services.xserver.libinput.enable = true;
@@ -20,17 +20,17 @@
   };
 
   # Not utils
-  environment.plasma5.excludePackages = with pkgs; [
-    libsForQt5.konsole
-    libsForQt5.elisa
-    libsForQt5.okular
+  environment.plasma6.excludePackages = with pkgs; [
+    kdePackages.konsole
+    kdePackages.elisa
+    kdePackages.okular
   ];
 
   # Utils
   environment.systemPackages = with pkgs; [
     kdeconnect
     kolourpaint
-    libsForQt5.filelight
+    kdePackages.filelight
     mission-center
     papirus-icon-theme
     partition-manager
