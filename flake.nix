@@ -11,11 +11,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Catppuccin
-    catppuccin.url = "github:catppuccin/nix";
+    # Stylix
+    stylix.url = "github:danth/stylix";
   };
 
-  outputs = { self, nixpkgs, home-manager, catppuccin, ... } @ inputs: let
+  outputs = { self, nixpkgs, home-manager, ... } @ inputs: let
     inherit (self) outputs;
   in {
     nixosConfigurations = {
@@ -24,7 +24,7 @@
         # > Our main nixos configuration file <
         modules = [
           inputs.home-manager.nixosModules.default
-          inputs.catppuccin.nixosModules.catppuccin
+          inputs.stylix.nixosModules.stylix
           ./hosts/camille/configuration.nix
           ./modules/nixos
           ./modules/home-manager

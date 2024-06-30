@@ -10,8 +10,6 @@
       useOSProber = true;
       default = "saved";
       configurationLimit = 32;
-
-      catppuccin.enable = true;
     };
     timeout = 10;
   };

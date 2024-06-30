@@ -3,7 +3,7 @@
 {
   home.packages = with pkgs; [
     kitty
-    kitty-themes
+    # kitty-themes
   ];
 
   home.sessionVariables = {
@@ -13,9 +13,7 @@
     enable = true;
     shellIntegration.enableFishIntegration = true;
 
-    theme = "Catppuccin-Mocha";
     settings = {
-      font_size = 14;
       disable_ligatures = "never";
 
       tab_bar_style = "powerline";
