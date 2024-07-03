@@ -28,7 +28,6 @@
 
   # Utils
   environment.systemPackages = with pkgs; [
-    kdeconnect
     kolourpaint
     kdePackages.filelight
     mission-center
@@ -36,4 +35,5 @@
     partition-manager
     pika-backup
   ];
+  programs.kdeconnect.enable = true;
 }
