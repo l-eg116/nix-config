@@ -13,4 +13,8 @@
     };
     timeout = 10;
   };
+
+  boot.plymouth = {
+    enable = true;
+  };
 }
