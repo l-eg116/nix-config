@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, config, ... }:
 
 {
   options = {
@@ -9,5 +9,5 @@
     home.packages = with pkgs; [
       kicad
     ];
-  }
+  };
 }
