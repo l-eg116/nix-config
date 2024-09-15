@@ -10,5 +10,5 @@
     mangohud
   ];
 
-  programs.gamemode.anable = true;
+  programs.gamemode.enable = true;
 }
