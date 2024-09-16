@@ -17,6 +17,7 @@
     ./tools/git.nix
     ./tools/nh.nix
     ./tools/qflipper.nix
+    ./tools/steam.nix
   ];
 
   # Allow unfree packages

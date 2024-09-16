@@ -11,7 +11,6 @@
     ./apps/obsidian.nix
     ./apps/orca-slicer.nix
     ./apps/signal.nix
-    # ./apps/steam.nix
     ./apps/vscode.nix
     ./shells/fish.nix
     ./terminal/kitty.nix
