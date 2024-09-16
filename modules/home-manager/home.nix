@@ -8,6 +8,7 @@
     ./apps/github.nix
     ./apps/kicad.nix
     ./apps/minecraft.nix
+    ./apps/obsidian.nix
     ./apps/orca-slicer.nix
     ./apps/signal.nix
     # ./apps/steam.nix

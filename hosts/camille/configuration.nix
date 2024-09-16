@@ -77,4 +77,8 @@
   };
 
   system.stateVersion = "24.05";
+
+  home-manager.users.l_eg = {
+    desktop.obsidian.enable = true;
+  };
 }
