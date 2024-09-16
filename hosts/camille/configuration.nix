@@ -27,6 +27,18 @@
     image = ./wallpaper.jpg;
     polarity = "dark";
 
+    # Switched by hand to better match base16 conventions, see result in etc/stylix/palette
+    override = {
+      base08 = "ea665f"; # Red
+      base09 = "df731e"; # Orange
+      base0A = "ae8e25"; # Yellow
+      base0B = "859a3b"; # Green
+      base0C = "559e93"; # Cyan
+      base0D = "6577ac"; # Blue
+      base0E = "7454a1"; # Purple
+      base0F = "6e5934"; # Brown
+    };
+
     cursor = {
       name = "Posy's Cursor";
       size = 32;
