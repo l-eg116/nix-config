@@ -94,6 +94,7 @@
     desktop = {
       obsidian.enable = true;
       kicad.enable = true;
+      zoom-us.enable = true;
     };
   };
 
