@@ -93,6 +93,7 @@
   home-manager.users.l_eg = {
     desktop = {
       obsidian.enable = true;
+      kicad.enable = true;
     };
   };
 
