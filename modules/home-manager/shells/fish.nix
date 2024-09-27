@@ -5,11 +5,13 @@ let
     cat = "bat";
     ls = "eza";
     lt = "eza --icons --tree --level 2";
+    nano = "micro";
     grep = "rg";
   };
 in
 {
   home.packages = with pkgs; [
+    micro
     neofetch
   ];
 
