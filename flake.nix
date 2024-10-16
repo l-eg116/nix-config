@@ -13,6 +13,9 @@
 
     # Stylix
     stylix.url = "github:danth/stylix";
+
+    # Zen Browser - while waiting for it to be properly packaged
+    zen-browser.url = "github:MarceColl/zen-browser-flake";
   };
 
   outputs = { self, nixpkgs, home-manager, ... } @ inputs: let
