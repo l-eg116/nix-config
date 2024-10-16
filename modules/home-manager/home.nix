@@ -7,6 +7,7 @@
     ./apps/discord.nix
     ./apps/github.nix
     ./apps/kicad.nix
+    ./apps/libreoffice.nix
     ./apps/minecraft.nix
     ./apps/obsidian.nix
     ./apps/orca-slicer.nix
