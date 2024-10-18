@@ -15,6 +15,7 @@
     ./system/bootloader.nix
     ./system/print.nix
     ./system/udev.nix
+    ./tools/docker.nix
     ./tools/git.nix
     ./tools/nh.nix
     ./tools/qflipper.nix

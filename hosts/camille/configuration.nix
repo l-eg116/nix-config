@@ -104,6 +104,7 @@
   };
 
   printing.enable = true;
+  docker.enable = true;
 
   # Zen Browser installation while waiting for a proper packages
   environment.systemPackages = [
