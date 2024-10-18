@@ -9,6 +9,7 @@
       "networkmanager"
       "wheel" # Sudo
       "dialout" # Serial devices such as Arduino or Flipper Zero
+      "tty"     # Serial devices such as Arduino or Flipper Zero
     ];
   };
 
