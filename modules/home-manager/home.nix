@@ -32,14 +32,6 @@
 
   xdg.enable = true;
 
-  # gtk = {
-  #   enable = true;
-  #   iconTheme = {
-  #     name = "Papirus";
-  #     package = pkgs.papirus-icon-theme;
-  #   };
-  # };
-
   programs.home-manager.enable = true;
   home.stateVersion = "24.05";
 }
