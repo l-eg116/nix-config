@@ -16,7 +16,7 @@
   };
 
   nix.gc = {
-    automatic = true;
+    automatic = false;
     dates = "weekly";
     options = "--delete-older-than 14d";
   };
@@ -111,5 +111,8 @@
   # Zen Browser installation while waiting for a proper packages
   environment.systemPackages = [
     inputs.zen-browser.packages."x86_64-linux".specific
+    pkgs.mongodb-compass
   ];
+
+  # services.flatpak.enable = true;
 }
