@@ -112,6 +112,7 @@
   environment.systemPackages = [
     inputs.zen-browser.packages."x86_64-linux".specific
     pkgs.mongodb-compass
+    pkgs.arduino-ide
   ];
 
   # services.flatpak.enable = true;
