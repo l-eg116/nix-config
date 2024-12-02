@@ -408,5 +408,15 @@
         '';
         destination = "/etc/udev/rules.d/61-libsigrok-uaccess.rules";
       })
+      (pkgs.writeTextFile {
+        name = "arduino_mbed_rules";
+        text = ''
+        SUBSYSTEMS=="usb", ATTRS{idVendor}=="2e8a", MODE:="0666"
+        SUBSYSTEMS=="usb", ATTRS{idVendor}=="2341", MODE:="0666"
+        SUBSYSTEMS=="usb", ATTRS{idVendor}=="1fc9", MODE:="0666"
+        SUBSYSTEMS=="usb", ATTRS{idVendor}=="0525", MODE:="0666"
+        '';
+        destination = "/etc/udev/rules.d/60-arduino-mbed.rules";
+      })
     ];
 }
