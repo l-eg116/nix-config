@@ -95,6 +95,7 @@
   home-manager.users.l_eg = {
     desktop = {
       obsidian.enable = true;
+      orca-slicer.enable = true;
       kicad.enable = true;
       libreoffice.enable = true;
       zoom-us.enable = true;
