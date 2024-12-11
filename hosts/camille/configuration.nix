@@ -65,15 +65,15 @@
 
     fonts = {
       monospace = {
-        package = pkgs.nerdfonts.override {fonts = ["FiraCode"];};
+        package = pkgs.nerd-fonts.fira-code;
         name = "FiraCode Nerd Font Mono";
       };
       sansSerif = {
-        package = pkgs.inter;
+        package = pkgs.inter-nerdfont;
         name = "Inter Variable";
       };
       serif = {
-        package = pkgs.inter;
+        package = pkgs.inter-nerdfont;
         name = "Inter Variable";
       };
       emoji = {
