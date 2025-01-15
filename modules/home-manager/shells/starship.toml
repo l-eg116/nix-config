@@ -199,4 +199,4 @@ min_time_to_notify = 30_000
 disabled = false
 time_format = "%R"                                                       # Hour:Minute Format
 style = "blue"
-format = '[](bg:red fg:$style)[ $time ](bg:$style)[](inverted $style)'
+format = '[](bg:red fg:$style)[ $time ](bg:$style)[]($style)'
