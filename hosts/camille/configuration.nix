@@ -111,7 +111,7 @@
 
   # Zen Browser installation while waiting for a proper packages
   environment.systemPackages = [
-    inputs.zen-browser.packages."x86_64-linux".specific
+    inputs.zen-browser.packages."x86_64-linux".default
     pkgs.mongodb-compass
     pkgs.arduino-ide
   ];
