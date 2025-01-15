@@ -45,7 +45,7 @@ format = '[]($style)[$user ](bg:$style)[]($style)'
 disabled = false
 
 [character]
-format = "[](inverted purple)[](purple) "
+format = "[](purple) "
 
 [hostname]
 ssh_only = true
@@ -189,7 +189,7 @@ format = '[ $symbol ($version) ]($style)'
 
 
 [cmd_duration]
-format = "[]($style)[ 󱎫 $duration ](bg:$style)[](inverted $style)"
+format = "[]($style)[ 󱎫 $duration ](bg:$style)[]($style)"
 style = "blue bold"
 min_time = 1_000
 show_notifications = false
