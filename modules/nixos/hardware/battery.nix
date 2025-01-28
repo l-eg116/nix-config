@@ -1,4 +1,9 @@
-{ options, config, lib, ... }:
+{
+  options,
+  config,
+  lib,
+  ...
+}:
 
 {
   # Better scheduling for CPU cycles - thanks System76!!!

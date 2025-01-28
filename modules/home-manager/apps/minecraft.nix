@@ -11,6 +11,10 @@
     exec = "prismlauncher %U";
     terminal = false;
     icon = "minecraft";
-    categories = [ "Application" "Game" "Education" ];
+    categories = [
+      "Application"
+      "Game"
+      "Education"
+    ];
   };
 }

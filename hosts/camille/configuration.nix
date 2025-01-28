@@ -1,13 +1,20 @@
-{ config, pkgs, inputs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 
 {
-  imports =
-    [
-      ./hardware-configuration.nix
-      ./locale.nix
-    ];
+  imports = [
+    ./hardware-configuration.nix
+    ./locale.nix
+  ];
 
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
   nixpkgs = {
     config = {
       allowUnfree = true;
@@ -103,7 +110,7 @@
   };
 
   desktop = {
-      steam.enable = true;
+    steam.enable = true;
   };
 
   printing.enable = true;

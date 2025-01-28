@@ -27,17 +27,17 @@
       confirm_os_window_close = -1;
     };
     extraConfig = ''
-    map ctrl+shift+enter new_window_with_cwd
+      map ctrl+shift+enter new_window_with_cwd
 
-    map ctrl+left  neighboring_window left
-    map ctrl+right neighboring_window right
-    map ctrl+up    neighboring_window top
-    map ctrl+down  neighboring_window bottom
+      map ctrl+left  neighboring_window left
+      map ctrl+right neighboring_window right
+      map ctrl+up    neighboring_window top
+      map ctrl+down  neighboring_window bottom
 
-    map ctrl+shift+left  move_window left
-    map ctrl+shift+right move_window right
-    map ctrl+shift+up    move_window top
-    map ctrl+shift+down  move_window bottom
+      map ctrl+shift+left  move_window left
+      map ctrl+shift+right move_window right
+      map ctrl+shift+up    move_window top
+      map ctrl+shift+down  move_window bottom
     '';
   };
 }

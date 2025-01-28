@@ -1,4 +1,10 @@
-{ options, config, lib, pkgs, ... }:
+{
+  options,
+  config,
+  lib,
+  pkgs,
+  ...
+}:
 
 let
   aliases = {
@@ -30,7 +36,6 @@ in
     '';
   };
 
-
   programs.eza = {
     enable = true;
     enableFishIntegration = true;
@@ -49,38 +54,38 @@ in
 
     commands = {
       on-select = ''
-      &{{
-        lf -remote "send $id set statfmt \"$(${pkgs.eza}/bin/eza -ld --icons --git -@ --color=always "$f")\""
-      }}
+        &{{
+          lf -remote "send $id set statfmt \"$(${pkgs.eza}/bin/eza -ld --icons --git -@ --color=always "$f")\""
+        }}
       '';
       z = ''
-      %{{
-        result="$(${pkgs.zoxide}/bin/zoxide query --exclude $PWD $@ | sed 's/\\/\\\\/g;s/"/\\"/g')"
-        lf -remote "send $id cd \"$result\""
-      }}
+        %{{
+          result="$(${pkgs.zoxide}/bin/zoxide query --exclude $PWD $@ | sed 's/\\/\\\\/g;s/"/\\"/g')"
+          lf -remote "send $id cd \"$result\""
+        }}
       '';
       zi = ''
-      ''${{
-        result="$(${pkgs.zoxide}/bin/zoxide query -i | sed 's/\\/\\\\/g;s/"/\\"/g')"
-        lf -remote "send $id cd \"$result\""
-      }}
+        ''${{
+          result="$(${pkgs.zoxide}/bin/zoxide query -i | sed 's/\\/\\\\/g;s/"/\\"/g')"
+          lf -remote "send $id cd \"$result\""
+        }}
       '';
       on-cd = ''
-      &{{
-        ${pkgs.zoxide}/bin/zoxide add "$PWD"
-      }}
+        &{{
+          ${pkgs.zoxide}/bin/zoxide add "$PWD"
+        }}
       '';
       mkdir = ''
-      ''${{
-        printf "Directory Name: "
-        read DIR
-        mkdir $DIR
-      }}
+        ''${{
+          printf "Directory Name: "
+          read DIR
+          mkdir $DIR
+        }}
       '';
       back-to-oldpwd = ''
-      %{{
-        lf -remote "send $id :cd $OLDPWD; quit"
-      }}
+        %{{
+          lf -remote "send $id :cd $OLDPWD; quit"
+        }}
       '';
     };
 
@@ -96,31 +101,30 @@ in
       md = "mkdir";
     };
 
-    extraConfig = 
-    let 
-      previewer = 
-        pkgs.writeShellScriptBin "pv.sh" ''
-        file=$1
-        w=$2
-        h=$3
-        x=$4
-        y=$5
-        
-        if [[ "$( ${pkgs.file}/bin/file -Lb --mime-type "$file")" =~ ^image ]]; then
-            ${pkgs.kitty}/bin/kitty +kitten icat --silent --stdin no --transfer-mode file --place "''${w}x''${h}@''${x}x''${y}" "$file" < /dev/null > /dev/tty
-            exit 1
-        fi
-        
-        ${pkgs.pistol}/bin/pistol "$file"
+    extraConfig =
+      let
+        previewer = pkgs.writeShellScriptBin "pv.sh" ''
+          file=$1
+          w=$2
+          h=$3
+          x=$4
+          y=$5
+
+          if [[ "$( ${pkgs.file}/bin/file -Lb --mime-type "$file")" =~ ^image ]]; then
+              ${pkgs.kitty}/bin/kitty +kitten icat --silent --stdin no --transfer-mode file --place "''${w}x''${h}@''${x}x''${y}" "$file" < /dev/null > /dev/tty
+              exit 1
+          fi
+
+          ${pkgs.pistol}/bin/pistol "$file"
+        '';
+        cleaner = pkgs.writeShellScriptBin "clean.sh" ''
+          ${pkgs.kitty}/bin/kitty +kitten icat --clear --stdin no --silent --transfer-mode file < /dev/null > /dev/tty
+        '';
+      in
+      ''
+        set cleaner ${cleaner}/bin/clean.sh
+        set previewer ${previewer}/bin/pv.sh
       '';
-      cleaner = pkgs.writeShellScriptBin "clean.sh" ''
-        ${pkgs.kitty}/bin/kitty +kitten icat --clear --stdin no --silent --transfer-mode file < /dev/null > /dev/tty
-      '';
-    in
-    ''
-      set cleaner ${cleaner}/bin/clean.sh
-      set previewer ${previewer}/bin/pv.sh
-    '';
   };
   xdg.configFile."lf/icons".source = ./icons;
 

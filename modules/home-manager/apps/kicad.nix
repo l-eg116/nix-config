@@ -1,4 +1,10 @@
-{ pkgs, lib, config, inputs, ... }:
+{
+  pkgs,
+  lib,
+  config,
+  inputs,
+  ...
+}:
 
 let
   pkgs-stable = inputs.nixpkgs-stable.legacyPackages.${pkgs.system};

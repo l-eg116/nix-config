@@ -2,27 +2,27 @@
 
 {
   services.udev.packages = [
-      (pkgs.writeTextFile {
-        name = "stlink_udev";
-        text = ''
-          # ST-LINK V2
-          SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="3748", MODE="600", TAG+="uaccess", SYMLINK+="stlinkv2_%n"
+    (pkgs.writeTextFile {
+      name = "stlink_udev";
+      text = ''
+        # ST-LINK V2
+        SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="3748", MODE="600", TAG+="uaccess", SYMLINK+="stlinkv2_%n"
 
-          # ST-LINK V2.1
-          SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="374b", MODE="600", TAG+="uaccess", SYMLINK+="stlinkv2-1_%n"
-          SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="3752", MODE="600", TAG+="uaccess", SYMLINK+="stlinkv2-1_%n"
+        # ST-LINK V2.1
+        SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="374b", MODE="600", TAG+="uaccess", SYMLINK+="stlinkv2-1_%n"
+        SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="3752", MODE="600", TAG+="uaccess", SYMLINK+="stlinkv2-1_%n"
 
-          # ST-LINK V3
-          SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="374d", MODE="600", TAG+="uaccess", SYMLINK+="stlinkv3loader_%n"
-          SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="374e", MODE="600", TAG+="uaccess", SYMLINK+="stlinkv3_%n"
-          SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="374f", MODE="600", TAG+="uaccess", SYMLINK+="stlinkv3_%n"
-          SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="3753", MODE="600", TAG+="uaccess", SYMLINK+="stlinkv3_%n"
-        '';
-        destination = "/etc/udev/rules.d/70-st-link.rules";
-      })
-      (pkgs.writeTextFile {
-        name = "libsigrok_udev";
-        text = ''
+        # ST-LINK V3
+        SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="374d", MODE="600", TAG+="uaccess", SYMLINK+="stlinkv3loader_%n"
+        SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="374e", MODE="600", TAG+="uaccess", SYMLINK+="stlinkv3_%n"
+        SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="374f", MODE="600", TAG+="uaccess", SYMLINK+="stlinkv3_%n"
+        SUBSYSTEMS=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="3753", MODE="600", TAG+="uaccess", SYMLINK+="stlinkv3_%n"
+      '';
+      destination = "/etc/udev/rules.d/70-st-link.rules";
+    })
+    (pkgs.writeTextFile {
+      name = "libsigrok_udev";
+      text = ''
         #
         # These rules do not grant any permission by itself, but flag devices
         # supported by libsigrok.
@@ -386,12 +386,12 @@
         ATTRS{idVendor}=="0c12", ATTRS{idProduct}=="7100", ENV{ID_SIGROK}="1"
 
         LABEL="libsigrok_rules_end"
-        '';
-        destination = "/etc/udev/rules.d/60-libsigrok.rules";
-      })
-      (pkgs.writeTextFile {
-        name = "libsigrok_uaccess_udev";
-        text = ''
+      '';
+      destination = "/etc/udev/rules.d/60-libsigrok.rules";
+    })
+    (pkgs.writeTextFile {
+      name = "libsigrok_uaccess_udev";
+      text = ''
         # Grant access permissions to users who are currently logged in locally.
         # This is the default policy for systems using systemd-logind (or a
         # compatible replacement).
@@ -405,18 +405,18 @@
         ENV{ID_SIGROK}=="1", TAG+="uaccess"
 
         LABEL="libsigrok_rules_uaccess_end"
-        '';
-        destination = "/etc/udev/rules.d/61-libsigrok-uaccess.rules";
-      })
-      (pkgs.writeTextFile {
-        name = "arduino_mbed_rules";
-        text = ''
+      '';
+      destination = "/etc/udev/rules.d/61-libsigrok-uaccess.rules";
+    })
+    (pkgs.writeTextFile {
+      name = "arduino_mbed_rules";
+      text = ''
         SUBSYSTEMS=="usb", ATTRS{idVendor}=="2e8a", MODE:="0666"
         SUBSYSTEMS=="usb", ATTRS{idVendor}=="2341", MODE:="0666"
         SUBSYSTEMS=="usb", ATTRS{idVendor}=="1fc9", MODE:="0666"
         SUBSYSTEMS=="usb", ATTRS{idVendor}=="0525", MODE:="0666"
-        '';
-        destination = "/etc/udev/rules.d/60-arduino-mbed.rules";
-      })
-    ];
+      '';
+      destination = "/etc/udev/rules.d/60-arduino-mbed.rules";
+    })
+  ];
 }

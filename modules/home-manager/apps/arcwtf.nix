@@ -1,4 +1,9 @@
-{ pkgs, lib, config, ... }:
+{
+  pkgs,
+  lib,
+  config,
+  ...
+}:
 
 {
   options = {
@@ -30,18 +35,18 @@
             # ArcWTF dependencies
             # Sidebery
             "{3c078156-979c-498b-8990-85f7987dd929}" = {
-                install_url = "https://addons.mozilla.org/firefox/downloads/latest/sidebery/latest.xpi";
-                installation_mode = "force_installed";
+              install_url = "https://addons.mozilla.org/firefox/downloads/latest/sidebery/latest.xpi";
+              installation_mode = "force_installed";
             };
             # Userchrome toggle
             "userchrome-toggle@joolee.nl" = {
-                install_url = "https://addons.mozilla.org/firefox/downloads/latest/userchrome-toggle/latest.xpi";
-                installation_mode = "force_installed";
+              install_url = "https://addons.mozilla.org/firefox/downloads/latest/userchrome-toggle/latest.xpi";
+              installation_mode = "force_installed";
             };
             # FireFox Colors
             "FirefoxColor@mozilla.com" = {
-                install_url = "https://addons.mozilla.org/firefox/downloads/latest/firefox-color/latest.xpi";
-                installation_mode = "force_installed";
+              install_url = "https://addons.mozilla.org/firefox/downloads/latest/firefox-color/latest.xpi";
+              installation_mode = "force_installed";
             };
 
             # uBlock Origin
@@ -95,7 +100,11 @@
       exec = "firefox %u";
       terminal = false;
       icon = ./arcwtf/Arc.ico;
-      categories = [ "Application" "Network" "WebBrowser" ];
+      categories = [
+        "Application"
+        "Network"
+        "WebBrowser"
+      ];
     };
   };
 }
