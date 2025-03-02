@@ -33,12 +33,11 @@
 
   # Utils
   environment.systemPackages = with pkgs; [
-    kolourpaint
+    kdePackages.kolourpaint
     kdePackages.filelight
-    mission-center
     papirus-icon-theme
-    partition-manager
     pika-backup
   ];
   programs.kdeconnect.enable = true;
+  programs.partition-manager.enable = true;
 }

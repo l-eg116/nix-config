@@ -32,9 +32,12 @@
   networking.hostName = "camille";
 
   stylix = {
-    enable = true;
+    enable = false;
     image = ./wallpaper.jpg;
     polarity = "dark";
+
+    targets.qt.enable = false;
+    # targets.kde.enable = false;
 
     # Switched by hand to better match base16 conventions, see result in etc/stylix/palette
     override = {
@@ -88,13 +91,6 @@
         name = "Noto Color Emoji";
       };
     };
-
-    opacity = {
-      desktop = 0.8;
-      popups = 0.8;
-      terminal = 0.8;
-      applications = 0.8;
-    };
   };
 
   system.stateVersion = "24.11";
@@ -102,8 +98,8 @@
   home-manager.users.l_eg = {
     desktop = {
       obsidian.enable = true;
-      orca-slicer.enable = true;
-      kicad.enable = true;
+      orca-slicer.enable = false;
+      kicad.enable = false;
       libreoffice.enable = true;
       zoom-us.enable = true;
     };
@@ -119,8 +115,11 @@
   # Zen Browser installation while waiting for a proper packages
   environment.systemPackages = [
     inputs.zen-browser.packages."x86_64-linux".default
-    pkgs.mongodb-compass
-    pkgs.arduino-ide
+    # pkgs.mongodb-compass
+    # pkgs.arduino-ide
+    pkgs.rpi-imager
+
+    # pkgs.probe-rs
   ];
 
   # services.flatpak.enable = true;
