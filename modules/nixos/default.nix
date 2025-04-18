@@ -17,6 +17,7 @@
     ./system/udev.nix
     ./tools/docker.nix
     ./tools/git.nix
+    ./tools/kanata.nix
     ./tools/nix-utils.nix
     ./tools/qflipper.nix
     ./tools/steam.nix
