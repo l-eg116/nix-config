@@ -103,6 +103,10 @@
       libreoffice.enable = true;
       zoom-us.enable = true;
     };
+
+    stylix = {
+      targets.starship.enable = false;
+    };
   };
 
   desktop = {
