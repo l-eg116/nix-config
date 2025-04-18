@@ -113,18 +113,15 @@
     steam.enable = true;
   };
 
+
   printing.enable = true;
   docker.enable = true;
+  keyboard-tapmod.enable = true;
 
   # Zen Browser installation while waiting for a proper packages
   environment.systemPackages = [
     inputs.zen-browser.packages."x86_64-linux".default
-    # pkgs.mongodb-compass
-    # pkgs.arduino-ide
     pkgs.rpi-imager
-
-    # pkgs.probe-rs
+    pkgs.ghostty
   ];
-
-  # services.flatpak.enable = true;
 }
