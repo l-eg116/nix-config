@@ -13,7 +13,7 @@
     };
 
     # Stylix
-    stylix.url = "github:danth/stylix";
+    # stylix.url = "github:danth/stylix";
 
     # Zen Browser - while waiting for it to be properly packaged
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
@@ -36,7 +36,7 @@
           # > Our main nixos configuration file <
           modules = [
             inputs.home-manager.nixosModules.default
-            inputs.stylix.nixosModules.stylix
+            # inputs.stylix.nixosModules.stylix
             ./hosts/camille/configuration.nix
             ./modules/nixos
             ./modules/home-manager
