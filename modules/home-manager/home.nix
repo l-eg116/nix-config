@@ -8,7 +8,6 @@
 
 {
   imports = [
-    ./apps/arcwtf.nix
     ./apps/chrome.nix
     ./apps/discord.nix
     ./apps/github.nix
