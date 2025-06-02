@@ -101,7 +101,7 @@
       orca-slicer.enable = false;
       kicad.enable = false;
       libreoffice.enable = true;
-      zoom-us.enable = true;
+      zoom-us.enable = false;
     };
 
     # stylix = {
