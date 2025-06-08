@@ -97,22 +97,22 @@
 
   home-manager.users.l_eg = {
     desktop = {
-      obsidian.enable = true;
-      orca-slicer.enable = false;
+      discord.enable = true;
+      github.enable = true;
       kicad.enable = false;
       libreoffice.enable = true;
-      zoom-us.enable = false;
+      minecraft.enable = true;
+      obsidian.enable = true;
+      orca-slicer.enable = false;
+      signal.enable = true;
+      vscode.enable = true;
+      zen-browser.enable = true;
     };
-
-    # stylix = {
-    #   targets.starship.enable = false;
-    # };
   };
 
   desktop = {
     steam.enable = true;
   };
-
 
   printing.enable = true;
   docker.enable = true;
@@ -120,8 +120,6 @@
 
   # Zen Browser installation while waiting for a proper packages
   environment.systemPackages = [
-    inputs.zen-browser.packages."x86_64-linux".default
     pkgs.rpi-imager
-    pkgs.ghostty
   ];
 }

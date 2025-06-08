@@ -7,7 +7,7 @@
 
 {
   options = {
-    desktop.chrome.enable = lib.mkEnableOption "Enables Chrome";
+    desktop.chrome.enable = lib.mkEnableOption "Enables Chrome.";
   };
 
   config = lib.mkIf config.desktop.chrome.enable {

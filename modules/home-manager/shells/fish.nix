@@ -27,13 +27,12 @@ in
 
   programs.direnv = {
     enable = true;
-  };
-  xdg.configFile."direnv" = {
-    target = "direnv/direnv.toml";
-    text = ''
-      [global]
-      hide_env_diff = true
-    '';
+    silent = true;
+    config = {
+      global = {
+        hide_env_diff = true;
+      };
+    };
   };
 
   programs.eza = {

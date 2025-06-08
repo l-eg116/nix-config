@@ -7,7 +7,7 @@
 
 {
   options = {
-    desktop.obsidian.enable = lib.mkEnableOption "Enables Obsidian";
+    desktop.obsidian.enable = lib.mkEnableOption "Enables Obsidian.";
   };
 
   config = lib.mkIf config.desktop.obsidian.enable {
