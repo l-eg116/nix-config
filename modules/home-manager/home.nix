@@ -20,6 +20,7 @@
     ./apps/vscode.nix
     ./apps/zoom-us.nix
     ./shells/fish.nix
+    ./terminal/ghostty.nix
     ./terminal/kitty.nix
   ];
 
