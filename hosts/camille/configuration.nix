@@ -99,6 +99,7 @@
     desktop = {
       discord.enable = true;
       github.enable = true;
+      ghostty.enable = true;
       kicad.enable = false;
       libreoffice.enable = true;
       minecraft.enable = true;
