@@ -35,6 +35,7 @@
   environment.systemPackages = with pkgs; [
     kdePackages.kolourpaint
     kdePackages.filelight
+    kdePackages.isoimagewriter
     papirus-icon-theme
     pika-backup
   ];
