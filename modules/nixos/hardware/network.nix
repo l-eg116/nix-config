@@ -3,7 +3,6 @@
 {
   networking.networkmanager = {
     enable = true;
-    enableStrongSwan = true;
   };
 
   environment.systemPackages = with pkgs; [
