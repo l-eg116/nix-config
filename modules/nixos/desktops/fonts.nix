@@ -12,6 +12,6 @@
   fonts.packages = with pkgs; [
     nerd-fonts.fira-code
     inter
-    noto-fonts-emoji
+    noto-fonts-color-emoji
   ];
 }

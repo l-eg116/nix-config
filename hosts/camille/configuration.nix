@@ -121,6 +121,6 @@
 
   # Zen Browser installation while waiting for a proper packages
   environment.systemPackages = [
-    pkgs.rpi-imager
+    # pkgs.rpi-imager
   ];
 }
