@@ -7,7 +7,7 @@
 }:
 
 let
-  pkgs-stable = inputs.nixpkgs-stable.legacyPackages.${pkgs.system};
+  pkgs-stable = inputs.nixpkgs-stable.legacyPackages.${pkgs.stdenv.hostPlatform.system};
 in
 {
   options = {

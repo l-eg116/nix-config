@@ -18,8 +18,10 @@
 
     programs.git = {
       enable = true;
-      userName = "l-eg116";
-      userEmail = "legcom6@gmail.com";
+      settings.user = {
+        name = "l-eg116";
+        email = "legcom6@gmail.com";
+      };
     };
 
     xdg.mimeApps = {

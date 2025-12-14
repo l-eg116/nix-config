@@ -93,7 +93,7 @@
   #   };
   # };
 
-  system.stateVersion = "25.05";
+  system.stateVersion = "25.11";
 
   home-manager.users.l_eg = {
     desktop = {
