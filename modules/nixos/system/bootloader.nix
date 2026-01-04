@@ -1,4 +1,4 @@
-{ config, ... }:
+{ ... }:
 
 {
   boot.loader = {
@@ -9,7 +9,7 @@
       device = "nodev";
       useOSProber = true;
       default = "saved";
-      configurationLimit = 32;
+      configurationLimit = 4;
     };
     timeout = 10;
   };
