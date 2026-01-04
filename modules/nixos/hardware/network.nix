@@ -6,6 +6,6 @@
   };
 
   environment.systemPackages = with pkgs; [
-    linux-wifi-hotspot
+    # linux-wifi-hotspot
   ];
 }
