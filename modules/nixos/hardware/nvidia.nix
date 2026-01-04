@@ -9,7 +9,7 @@
   # Enable OpenGL
   hardware.graphics = {
     enable = true;
-    enable32Bit = true;
+    # enable32Bit = true;
   };
 
   # Load nvidia driver for Xorg and Wayland
@@ -45,6 +45,6 @@
     prime.nvidiaBusId = "PCI:1:0:0";
 
     # Optionally, you may need to select the appropriate driver version for your specific GPU.
-    package = config.boot.kernelPackages.nvidiaPackages.beta;
+    package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 }
