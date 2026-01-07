@@ -418,5 +418,12 @@
       '';
       destination = "/etc/udev/rules.d/60-arduino-mbed.rules";
     })
+    (pkgs.writeTextFile {
+      name = "keychron_rules";
+      text = ''
+        KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="3434", ATTRS{idProduct}=="0950", MODE="0666", TAG+="uaccess", TAG+="udev-acl"
+      '';
+      destination = "/etc/udev/rules.d/99-keychron.rules";
+    })
   ];
 }
