@@ -421,7 +421,12 @@
     (pkgs.writeTextFile {
       name = "keychron_rules";
       text = ''
+        # Keychron V5 Max through USB and 2.4 GHz dongle
         KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="3434", ATTRS{idProduct}=="0950", MODE="0666", TAG+="uaccess", TAG+="udev-acl"
+        KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="3434", ATTRS{idProduct}=="d030", MODE="0666", TAG+="uaccess", TAG+="udev-acl"
+        # Keychron V5 Max's STM32 in DFU Mode
+        SUBSYSTEM=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", MODE="0666", TAG+="uaccess", TAG+="udev-acl"
+        SUBSYSTEM=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="d030", MODE="0666", TAG+="uaccess", TAG+="udev-acl"
       '';
       destination = "/etc/udev/rules.d/99-keychron.rules";
     })
