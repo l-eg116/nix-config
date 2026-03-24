@@ -1,7 +1,4 @@
 {
-  options,
-  config,
-  lib,
   pkgs,
   ...
 }:
@@ -18,7 +15,6 @@ in
 {
   home.packages = with pkgs; [
     micro
-    neofetch
   ];
 
   programs.bat = {
@@ -126,11 +122,6 @@ in
       '';
   };
   xdg.configFile."lf/icons".source = ./icons;
-
-  xdg.configFile."neofetch" = {
-    source = ./neofetch;
-    recursive = true;
-  };
 
   programs.ripgrep.enable = true;
 
