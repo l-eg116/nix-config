@@ -12,10 +12,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    # Stylix
-    # stylix.url = "github:danth/stylix";
-
-    # Zen Browser - while waiting for it to be properly packaged
+    # Zen Browser - while waiting for it to be stable
     zen-browser.url = "github:youwen5/zen-browser-flake";
   };
 
@@ -36,7 +33,6 @@
           # > Our main nixos configuration file <
           modules = [
             inputs.home-manager.nixosModules.default
-            # inputs.stylix.nixosModules.stylix
             ./hosts/camille/configuration.nix
             ./modules/nixos
             ./modules/home-manager
