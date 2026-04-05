@@ -10,26 +10,7 @@
         self.nixosModules.defaultLocale
       ];
 
-      nix.settings.experimental-features = [
-        "nix-command"
-        "flakes"
-      ];
-      nixpkgs = {
-        config = {
-          allowUnfree = true;
-        };
-      };
-
-      nix.gc = {
-        automatic = false;
-        dates = "weekly";
-        options = "--delete-older-than 14d";
-      };
-      nix.optimise.automatic = true;
-
       networking.hostName = "camille";
-
-      system.stateVersion = "25.11";
 
       home-manager.users.l_eg = {
         desktop = {
