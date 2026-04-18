@@ -7,7 +7,6 @@
     ./desktops/fonts.nix
     ./desktops/plasma.nix
     ./hardware/battery.nix
-    ./hardware/nvidia.nix
     ./shells/sh.nix
     ./tools/docker.nix
     ./tools/git.nix

@@ -9,12 +9,13 @@
 
       imports = with self.nixosModules; [
         camille-hardware
-        defaultLocale
+        camille-nvidia
         # System
         grub
         plymouth
         networkmanager
         bluetooth
+        defaultLocale
         # Essentials
         bundle-desktopEssentials
       ];
