@@ -4,6 +4,9 @@
     { pkgs, ... }:
 
     {
+      environment.systemPackages = with pkgs; [
+        usbutils
+      ];
       services.udev.packages = [
         (pkgs.writeTextFile {
           name = "stlink_udev";

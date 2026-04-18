@@ -21,6 +21,7 @@
         bluetooth
         defaultLocale
         # Essentials
+        additionalPackages
         bundle-desktopEssentials
       ];
 

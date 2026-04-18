@@ -1,7 +1,7 @@
 { lib, ... }:
 {
   flake.nixosModules.defaults =
-    { ... }:
+    { inputs, ... }:
     {
       options = {
         mainUser = lib.mkOption {
@@ -22,6 +22,9 @@
         ];
         # Allow unfree packages
         nixpkgs.config.allowUnfree = true;
+
+        # Configure nix path
+        nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
       };
     };
 }

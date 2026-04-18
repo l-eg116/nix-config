@@ -6,13 +6,6 @@
 }:
 
 {
-  environment.systemPackages = with pkgs; [
-    nixd
-    nixfmt
-  ];
-
-  nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
-
   programs.nh = {
     enable = true;
     clean = {
