@@ -5,12 +5,15 @@
     { ... }:
 
     {
-      imports = [
-        self.nixosModules.camille-hardware
-        self.nixosModules.defaultLocale
-      ];
-
       networking.hostName = "camille";
+
+      imports = with self.nixosModules; [
+        camille-hardware
+        defaultLocale
+        # System
+        grub
+        plymouth
+      ];
 
       home-manager.users.l_eg = {
         desktop = {

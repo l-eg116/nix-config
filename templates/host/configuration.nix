@@ -10,9 +10,9 @@
       ...
     }:
     {
-      imports = [
-        self.nixosModules.myHostname-hardware
-        self.nixosModules.defaultLocale
+      imports = with self.nixosModules; [
+        myHostname-hardware
+        defaultLocale
       ];
     };
 }

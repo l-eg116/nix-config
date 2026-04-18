@@ -12,7 +12,6 @@
     ./hardware/sound.nix
     ./hardware/nvidia.nix
     ./shells/sh.nix
-    ./system/bootloader.nix
     ./system/print.nix
     ./system/udev.nix
     ./tools/docker.nix
