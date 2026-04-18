@@ -13,6 +13,7 @@
         # System
         grub
         plymouth
+        networkmanager
         bluetooth
         # Essentials
         bundle-desktopEssentials
