@@ -22,7 +22,8 @@
     '';
 
     # Ensure the uinput group exists
-    users.groups.uinput = { };
+    users.groups.input.members = [ config.mainUser ];
+    users.groups.uinput.members = [ config.mainUser ];
 
     # Add the Kanata service user to necessary groups
     systemd.services.kanata-internalKeyboard.serviceConfig = {

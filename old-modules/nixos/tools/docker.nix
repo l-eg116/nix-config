@@ -8,6 +8,6 @@
   config = lib.mkIf config.docker.enable {
     virtualisation.docker.enable = true;
 
-    users.extraGroups.docker.members = [ "l_eg" ];
+    users.groups.docker.members = [ config.mainUser ];
   };
 }

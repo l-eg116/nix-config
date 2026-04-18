@@ -1,4 +1,9 @@
-{ pkgs, inputs, ... }:
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 
 {
   environment.systemPackages = with pkgs; [
@@ -14,6 +19,6 @@
       enable = true;
       extraArgs = "--keep-since 12d --keep 4";
     };
-    flake = "/home/l_eg/Documents/repos/nix-config";
+    flake = "/home/${config.mainUser}/Documents/repos/nix-config";
   };
 }

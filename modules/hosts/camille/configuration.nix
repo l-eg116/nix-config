@@ -6,6 +6,7 @@
 
     {
       networking.hostName = "camille";
+      mainUser = "l_eg";
 
       imports = with self.nixosModules; [
         camille-hardware
@@ -15,6 +16,7 @@
         grub
         plymouth
         sudo
+        user
         networkmanager
         bluetooth
         defaultLocale

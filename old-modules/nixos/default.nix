@@ -3,7 +3,6 @@
 {
   imports = [
     ./misc.nix
-    ./user.nix
     ./desktops/fonts.nix
     ./desktops/plasma.nix
     ./shells/sh.nix
