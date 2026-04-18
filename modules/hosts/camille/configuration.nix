@@ -13,6 +13,8 @@
         # System
         grub
         plymouth
+        # Essentials
+        bundle-desktopEssentials
       ];
 
       home-manager.users.l_eg = {
