@@ -13,6 +13,7 @@
         # System
         grub
         plymouth
+        bluetooth
         # Essentials
         bundle-desktopEssentials
       ];

@@ -7,7 +7,6 @@
     ./desktops/fonts.nix
     ./desktops/plasma.nix
     ./hardware/battery.nix
-    ./hardware/bluetooth.nix
     ./hardware/network.nix
     ./hardware/nvidia.nix
     ./shells/sh.nix
