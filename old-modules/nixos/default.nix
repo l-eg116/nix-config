@@ -11,7 +11,6 @@
     ./hardware/network.nix
     ./hardware/nvidia.nix
     ./shells/sh.nix
-    ./system/udev.nix
     ./tools/docker.nix
     ./tools/git.nix
     ./tools/kanata.nix
