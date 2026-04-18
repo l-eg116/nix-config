@@ -3,8 +3,9 @@
   flake.nixosModules.bundle-desktopEssentials =
     { ... }:
     {
-      imports = [
-        self.nixosModules.printing
+      imports = with self.nixosModules; [
+        printing
+        sound
       ];
     };
 }

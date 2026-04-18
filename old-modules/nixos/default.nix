@@ -9,7 +9,6 @@
     ./hardware/battery.nix
     ./hardware/bluetooth.nix
     ./hardware/network.nix
-    ./hardware/sound.nix
     ./hardware/nvidia.nix
     ./shells/sh.nix
     ./system/udev.nix
