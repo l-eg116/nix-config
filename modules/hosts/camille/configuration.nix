@@ -35,7 +35,6 @@
         steam.enable = true;
       };
 
-      printing.enable = true;
       docker.enable = true;
       keyboard-tapmod.enable = true;
     };
