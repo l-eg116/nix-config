@@ -4,7 +4,6 @@
   imports = [
     ./misc.nix
     ./desktops/fonts.nix
-    ./desktops/plasma.nix
     ./shells/sh.nix
     ./tools/docker.nix
     ./tools/git.nix

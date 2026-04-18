@@ -4,6 +4,7 @@
     { ... }:
     {
       imports = with self.nixosModules; [
+        plymouth
         printing
         sound
         udev

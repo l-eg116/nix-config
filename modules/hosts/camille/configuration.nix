@@ -9,17 +9,18 @@
       mainUser = "l_eg";
 
       imports = with self.nixosModules; [
+        # Host specific
         camille-hardware
         camille-nvidia
         camille-battery
         # System
         grub
-        plymouth
         sudo
         user
         networkmanager
         bluetooth
         defaultLocale
+        plasma6
         # Essentials
         additionalPackages
         bundle-desktopEssentials
