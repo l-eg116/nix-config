@@ -14,6 +14,7 @@
         # System
         grub
         plymouth
+        sudo
         networkmanager
         bluetooth
         defaultLocale
