@@ -10,6 +10,7 @@
       imports = with self.nixosModules; [
         camille-hardware
         camille-nvidia
+        camille-battery
         # System
         grub
         plymouth
