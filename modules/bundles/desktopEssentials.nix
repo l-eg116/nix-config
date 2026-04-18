@@ -4,6 +4,7 @@
     { ... }:
     {
       imports = with self.nixosModules; [
+        fonts
         plymouth
         printing
         sound

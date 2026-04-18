@@ -3,7 +3,6 @@
 {
   imports = [
     ./misc.nix
-    ./desktops/fonts.nix
     ./shells/sh.nix
     ./tools/docker.nix
     ./tools/git.nix
