@@ -13,8 +13,10 @@
 
       # Enable touchpad support (enabled default in most desktopManager).
       services.libinput.enable = true;
+      # Numlock on start
+      services.displayManager.sddm.autoNumlock = true;
 
-      services.xserver.dpi = 124;
+      services.xserver.dpi = 124; # TODO : remove ?
 
       # Keymap in X11
       services.xserver.xkb = {
@@ -35,7 +37,6 @@
         kdePackages.filelight
         kdePackages.isoimagewriter
         papirus-icon-theme
-        pika-backup # TODO - Move to own file
       ];
       programs.kdeconnect.enable = true;
       programs.partition-manager.enable = true;

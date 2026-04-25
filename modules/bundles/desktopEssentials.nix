@@ -10,6 +10,8 @@
         printing
         sound
         udev
+        # Tools
+        pika-backup
       ];
     };
 }

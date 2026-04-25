@@ -15,13 +15,10 @@
         camille-battery
         # System
         grub
-        sudo
-        user
-        networkmanager
         bluetooth
         defaultLocale
         plasma6
-        # Essentials
+        # Bundles
         bundle-mustHave
         bundle-desktopEssentials
         # Tools
