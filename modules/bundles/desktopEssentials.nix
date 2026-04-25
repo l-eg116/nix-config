@@ -12,6 +12,8 @@
         udev
         # Tools
         pika-backup
+        vscode
+        zen-browser
       ];
     };
 }

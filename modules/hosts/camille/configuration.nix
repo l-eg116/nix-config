@@ -23,7 +23,7 @@
         bundle-desktopEssentials
         # Tools
         qFlipper
-        zen-browser
+        github
         # Apps
         steam
       ];
@@ -31,7 +31,6 @@
       home-manager.users.l_eg = {
         desktop = {
           discord.enable = true;
-          github.enable = true;
           ghostty.enable = true;
           kicad.enable = false;
           libreoffice.enable = true;
@@ -39,7 +38,6 @@
           obsidian.enable = true;
           orca-slicer.enable = false;
           signal.enable = true;
-          vscode.enable = true;
         };
       };
     };
