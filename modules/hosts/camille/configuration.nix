@@ -46,7 +46,6 @@
         steam.enable = true;
       };
 
-      docker.enable = true;
       keyboard-tapmod.enable = true;
     };
 }
