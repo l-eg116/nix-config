@@ -23,6 +23,7 @@
         bundle-desktopEssentials
         # Tools
         qFlipper
+        zen-browser
         # Apps
         steam
       ];
@@ -39,7 +40,6 @@
           orca-slicer.enable = false;
           signal.enable = true;
           vscode.enable = true;
-          zen-browser.enable = true;
         };
       };
     };

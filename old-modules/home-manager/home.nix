@@ -8,7 +8,6 @@
 
 {
   imports = [
-    ./apps/chrome.nix
     ./apps/discord.nix
     ./apps/github.nix
     ./apps/kicad.nix
@@ -18,7 +17,6 @@
     ./apps/orca-slicer.nix
     ./apps/signal.nix
     ./apps/vscode.nix
-    ./apps/zen-browser.nix
     ./apps/zoom-us.nix
     ./shells/fish.nix
     ./terminal/ghostty.nix
