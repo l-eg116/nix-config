@@ -45,7 +45,5 @@
       desktop = {
         steam.enable = true;
       };
-
-      keyboard-tapmod.enable = true;
     };
 }
