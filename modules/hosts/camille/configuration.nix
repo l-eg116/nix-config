@@ -22,7 +22,7 @@
         defaultLocale
         plasma6
         # Essentials
-        additionalPackages
+        bundle-mustHave
         bundle-desktopEssentials
       ];
 
