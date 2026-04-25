@@ -26,6 +26,8 @@
         bundle-desktopEssentials
         # Tools
         qFlipper
+        # Apps
+        steam
       ];
 
       home-manager.users.l_eg = {
@@ -42,10 +44,6 @@
           vscode.enable = true;
           zen-browser.enable = true;
         };
-      };
-
-      desktop = {
-        steam.enable = true;
       };
     };
 }
