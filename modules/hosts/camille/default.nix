@@ -2,7 +2,14 @@
 {
 
   flake.nixosConfigurations.camille = inputs.nixpkgs.lib.nixosSystem {
-    specialArgs = { inherit inputs; };
+    specialArgs =
+      let
+        system = "x86_64-linux";
+      in
+      {
+        inherit inputs;
+        pkgs-stable = import inputs.nixpkgs-stable { inherit system; };
+      };
     modules = [
       self.nixosModules.defaults
       self.nixosModules.camille-configuration
