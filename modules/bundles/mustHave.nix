@@ -8,6 +8,7 @@
         additionalPackages
         # Tools
         git
+        nh
       ];
     };
 }
