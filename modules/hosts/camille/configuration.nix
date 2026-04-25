@@ -24,6 +24,8 @@
         # Essentials
         bundle-mustHave
         bundle-desktopEssentials
+        # Tools
+        qFlipper
       ];
 
       home-manager.users.l_eg = {
