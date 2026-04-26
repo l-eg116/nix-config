@@ -13,9 +13,7 @@
     ./apps/libreoffice.nix
     ./apps/minecraft.nix
     ./apps/obsidian.nix
-    ./apps/orca-slicer.nix
     ./apps/signal.nix
-    ./apps/zoom-us.nix
     ./shells/fish.nix
     ./terminal/ghostty.nix
     ./terminal/kitty.nix

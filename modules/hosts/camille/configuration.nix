@@ -36,7 +36,6 @@
           libreoffice.enable = true;
           minecraft.enable = true;
           obsidian.enable = true;
-          orca-slicer.enable = false;
           signal.enable = true;
         };
       };
