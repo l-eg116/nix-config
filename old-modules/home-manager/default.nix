@@ -10,10 +10,10 @@
     inputs.home-manager.nixosModules.default
   ];
 
-  home-manager = {
-    extraSpecialArgs = { inherit inputs; };
-    users."l_eg".imports = [
-      ./home.nix
-    ];
-  };
+  # home-manager = {
+  #   extraSpecialArgs = { inherit inputs; };
+  #   users."l_eg".imports = [
+  #     ./home.nix
+  #   ];
+  # };
 }

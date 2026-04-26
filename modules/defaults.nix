@@ -1,7 +1,12 @@
 { lib, ... }:
 {
   flake.nixosModules.defaults =
-    { inputs, ... }:
+    {
+      config,
+      inputs,
+      pkgs-stable,
+      ...
+    }:
     {
       options = {
         mainUser = lib.mkOption {
@@ -25,6 +30,15 @@
 
         # Configure nix path
         nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
+
+        # Configure home manager
+        home-manager = {
+          extraSpecialArgs = {
+            inherit inputs;
+            inherit pkgs-stable;
+          };
+          sharedModules = [ { home.stateVersion = config.system.stateVersion; } ];
+        };
       };
     };
 }

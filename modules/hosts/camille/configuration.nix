@@ -28,13 +28,7 @@
         libreoffice
         steam
         obsidian
+        minecraft
       ];
-
-      home-manager.users.l_eg = {
-        desktop = {
-          ghostty.enable = true;
-          minecraft.enable = true;
-        };
-      };
     };
 }

@@ -11,6 +11,7 @@
         sound
         udev
         # Tools
+        ghostty
         pika-backup
         vscode
         zen-browser

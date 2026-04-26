@@ -8,7 +8,6 @@
 
 {
   imports = [
-    ./apps/minecraft.nix
     ./shells/fish.nix
     ./terminal/ghostty.nix
     ./terminal/kitty.nix

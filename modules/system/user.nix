@@ -13,5 +13,7 @@
           "tty" # Serial devices such as Arduino or Flipper Zero
         ];
       };
+
+      home-manager.users.${config.mainUser} = { };
     };
 }
