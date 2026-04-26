@@ -8,10 +8,7 @@
 
 {
   imports = [
-    ./apps/kicad.nix
-    ./apps/libreoffice.nix
     ./apps/minecraft.nix
-    ./apps/obsidian.nix
     ./shells/fish.nix
     ./terminal/ghostty.nix
     ./terminal/kitty.nix

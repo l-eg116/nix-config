@@ -25,16 +25,15 @@
         qFlipper
         github
         # Apps
+        libreoffice
         steam
+        obsidian
       ];
 
       home-manager.users.l_eg = {
         desktop = {
           ghostty.enable = true;
-          kicad.enable = false;
-          libreoffice.enable = true;
           minecraft.enable = true;
-          obsidian.enable = true;
         };
       };
     };
