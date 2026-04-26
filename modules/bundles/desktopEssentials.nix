@@ -14,6 +14,9 @@
         pika-backup
         vscode
         zen-browser
+        # Apps
+        discord
+        signal
       ];
     };
 }
