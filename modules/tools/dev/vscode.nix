@@ -4,5 +4,6 @@
     { ... }:
     {
       programs.vscode.enable = true;
+      environment.shellAliases.c = "code";
     };
 }

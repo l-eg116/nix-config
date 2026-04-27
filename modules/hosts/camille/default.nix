@@ -11,13 +11,10 @@
         pkgs-stable = import inputs.nixpkgs-stable { inherit system; };
       };
     modules = [
+      inputs.home-manager.nixosModules.default
+
       self.nixosModules.defaults
       self.nixosModules.camille-configuration
-
-      # For compatibility with old pattern - TODO: switch to dendritic
-      inputs.home-manager.nixosModules.default
-      ./../../../old-modules/nixos
-      ./../../../old-modules/home-manager
     ];
   };
 }

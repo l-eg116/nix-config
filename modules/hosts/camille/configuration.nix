@@ -20,8 +20,10 @@
         plasma6
         # Bundles
         bundle-mustHave
+        bundle-cliEssentials
         bundle-desktopEssentials
         # Tools
+        fish
         qFlipper
         github
         # Apps
