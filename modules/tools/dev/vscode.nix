@@ -1,9 +1,9 @@
 { ... }:
 {
   flake.nixosModules.vscode =
-    { ... }:
+    { pkgs, ... }:
     {
-      programs.vscode.enable = true;
+      environment.systemPackages = [ pkgs.vscode ];
       environment.shellAliases.c = "code";
     };
 }
