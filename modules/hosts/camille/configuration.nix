@@ -26,6 +26,7 @@
         fish
         qFlipper
         github
+        sunshine
         # Apps
         libreoffice
         steam
