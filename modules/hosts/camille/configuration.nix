@@ -28,6 +28,7 @@
         github
         sunshine
         # Apps
+        deezer
         libreoffice
         steam
         obsidian
