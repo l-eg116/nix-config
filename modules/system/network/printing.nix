@@ -9,6 +9,11 @@
         drivers = with pkgs; [
           cups-filters
           cups-browsed
+          gutenprint
+          # Canon printers drivers
+          cnijfilter2
+          cnijfilter_2_80
+          cnijfilter_4_00
         ];
       };
 
